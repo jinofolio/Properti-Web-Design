@@ -1,0 +1,38 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(20, 55, 232) , rgb(116, 179, 227));
+}
+
+@import url('Poppins-Medium.otf');
+@font-face {
+    font-family: popmed;
+    src: url(Poppins-Medium.otf);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0rem 3%;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-family: popmed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.houseimg {
+    height: 35rem;
+    width: 35rem;
+}
