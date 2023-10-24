@@ -3,7 +3,10 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(20, 55, 232) , rgb(116, 179, 227));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(49,48,54) , rgb(49,48,54));
 }
 
 @import url('Poppins-Medium.otf');
@@ -16,23 +19,230 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
     padding: 0rem 3%;
 }
 
 .navbar a {
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: popmed;
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.navbar .logo:hover {
+    color: white;
+}
+
+.nav-right a:hover {
+    color: rgb(252,181,151);
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem;
 }
 
 .houseimg {
     height: 35rem;
     width: 35rem;
+}
+
+.container .left p a {
+    color: white;
+    text-decoration: none;
+}
+
+.tombol {
+    background-color: rgb(176,100,87);
+    border-radius: 25px;
+    border: solid;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem;
+}
+
+.left {
+    cursor: default;
+}
+
+/* CARD MAPS */
+
+.maps {
+    width: 100%;
+}
+
+.maps .row .tittle-text {
+    padding: 0rem 3%;
+}
+
+.row {
+    width: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.maps .row .col-md-3 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.row .card {
+    width: 250px;
+    height: 365px;
+    overflow: hidden;
+}
+
+.row .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(252, 181, 151, 0.333);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: -100%;
+    transition: 1s;
+}
+
+.card-tittle {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    font-family: popmed;
+    cursor: default;
+}
+
+.card-desc {
+    text-transform: capitalize;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400px;
+    color: white;
+    cursor: default;
+}
+
+.card-button {
+    background-color: rgb(176,100,87);
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.row h2 {
+    cursor: default;
+}
+
+/* FILTER */
+
+
+.filter {
+    padding: 0rem 3%;
+    height: 100vh;
+}
+
+.filter-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: popmed;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 200px;
+    border: 2px solid white;
+    padding: 0 16px;
+}
+
+.filter-tittle .chevdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 21px;
+    background-color: rgb(176,100,87);
+    border-radius: 50%;
+}
+
+.list-items {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    width: 650px;
+    border-radius: 20px;
+    padding: 16px;
+    color: white;
+    background-color: rgb(176,100,87);
+    display: none;
+}
+
+.list-items .item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 7px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.list-items .item:hover {
+    border-radius: 15px;
+    background-color: rgb(49,48,54);
+}
+
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;   
+    width: 16px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 12px;
+}
+
+.checkbox .check {
+    font-size: 11px;
+    color: rgb(176,100,87);
+}
+
+.select-btn.open ~ .list-items {
+    display: flex;
+}
+
+.checkbox .check {
+    font-size: 11px;
+    transform: scale(0);
+}
+
+.item.checked .check {
+    transform: scale(1);
 }
