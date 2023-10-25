@@ -1,6 +1,14 @@
 body::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+    background-color: rgb(49,48,54);
 }
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: white;
+}
+
 
 body {
     margin: 0;
@@ -13,6 +21,12 @@ body {
 @font-face {
     font-family: popmed;
     src: url(Poppins-Medium.otf);
+}
+
+@import url('Poppins-Light.otf');
+@font-face {
+    font-family: poplig;
+    src: url(Poppins-Light.otf);
 }
 
 .navbar {
@@ -72,6 +86,17 @@ body {
     cursor: default;
 }
 
+.left .slkp {
+    text-decoration: none;
+}
+
+.tombol:hover {
+    background-color: rgb(116, 63, 53);
+}
+
+
+
+
 /* CARD MAPS */
 
 .maps {
@@ -83,7 +108,7 @@ body {
 }
 
 .row {
-    width: 101%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,6 +175,15 @@ body {
     width: 150px;
 }
 
+.card-button a {
+    text-decoration: none;
+    font-family: poplig;
+}
+
+.card-button:hover {
+    background-color: rgb(116, 63, 53);
+}
+
 .card:hover .card-body {
     right: 0;
 }
@@ -158,12 +192,17 @@ body {
     cursor: default;
 }
 
+
+
+
+
+
+
 /* FILTER */
 
 
 .filter {
     padding: 0rem 3%;
-    height: 100vh;
 }
 
 .filter-tittle {
@@ -195,12 +234,11 @@ body {
     justify-content: space-between;
     position: relative;
     margin-top: 15px;
-    width: 650px;
+    width: 550px;
     border-radius: 20px;
-    padding: 16px;
-    color: white;
-    background-color: rgb(176,100,87);
+    padding: 5px;
     display: none;
+    background-color: rgb(137, 73, 61);
 }
 
 .list-items .item {
@@ -209,13 +247,19 @@ body {
     list-style: none;
     padding: 7px;
     cursor: pointer;
-    transition: .2s;
+    transition: .2s;    
     border-radius: 5px;
 }
 
 .list-items .item:hover {
     border-radius: 15px;
     background-color: rgb(49,48,54);
+}
+
+.item button {
+    color: white;
+    border: none;
+    background-color: transparent;
 }
 
 .item .checkbox {
@@ -238,6 +282,7 @@ body {
     display: flex;
 }
 
+
 .checkbox .check {
     font-size: 11px;
     transform: scale(0);
@@ -246,3 +291,138 @@ body {
 .item.checked .check {
     transform: scale(1);
 }
+
+
+
+
+
+
+/* IMAGE */
+
+.card-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card {
+    padding-top: 2rem;
+    width: 90%;
+}
+
+.rowtwo {
+    padding: 0.3rem 0.3rem 0 ;
+    background-color: rgb(120, 120, 120);
+    border-radius: 8px 8px 0 0;
+}
+
+.cardimg.hide {
+    display: none;
+}
+
+
+.rowtwo .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    border-radius: 8px 8px 0 0;
+    height: 220px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.rowtwo img{
+    border-radius: 8px 0px 0px 0px;
+    height: 100%;
+    width: 400px;
+}
+
+.rowtwo .image-container .description {
+    font-family: popmed;
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 1rem;    
+}
+
+.rowtwo .image-container .text-description {
+    font-family: poplig;
+    margin-left: 2rem;
+}
+
+.rowtwo .image-container .text-description .startbtn {
+    border-radius: 5px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+}
+
+.rowtwo .image-container .text-description .prop1 {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgb(176,100,87);
+    margin: 3px 0;
+}
+
+.rowtwo .image-container .text-description .bed {
+    height: 13px;
+    width: 13px;
+}
+
+/* IMG1 */
+
+.rowthree {
+    padding: 0rem 0.3rem 0.3rem ;
+    background-color: rgb(120, 120, 120);
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 1rem;
+}
+
+.rowthree .image-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    border-radius: 0 0 8px 8px;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+}
+
+.rowthree .building{
+    margin-left: 2rem;
+    height: 100px;
+    width: 100px;
+}
+
+.image-logo .description2 {
+    margin-left: 2rem;
+    font-family: poplig ;
+    cursor: default;
+}
+
+.image-logo .desc-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150vh;
+}
+
+.image-logo .description-bdn {
+    margin-left: 2rem;
+    cursor: default;
+}
+
+.image-logo .desc-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.image-logo .desc-logo a{
+    margin: 0 1rem;
+    color: black;
+}
+
+/* IMG FILTER */
