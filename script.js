@@ -20,24 +20,22 @@ items.forEach(item => {
 
 // FILTERMAP
 
-
-
 const filterLok = document.querySelectorAll(".card");
 const selectedLok = document.querySelectorAll(".cardimg");
 
 const filterLokasi = (e) => {
 
     document.querySelectorAll(".btnaktif").forEach(btn => {
-        btn.classList.remove("btnaktif");
+    btn.classList.remove("btnaktif");
     });
 
     e.target.classList.add("btnaktif");
 
     selectedLok.forEach(cardimg => {
-        cardimg.classList.add("hide");
+    cardimg.classList.add("hide");
 
-        if (e.target.dataset.name === "all" || cardimg.getAttribute("data-name2") === e.target.dataset.name) {
-            cardimg.classList.remove("hide");
+        if (cardimg.getAttribute("data-name2") === e.target.dataset.name) {
+        cardimg.classList.remove("hide");
         }
     });
 };
@@ -45,12 +43,6 @@ const filterLokasi = (e) => {
 filterLok.forEach((card) => {
     card.addEventListener("click", filterLokasi);
 });
-
-
-
-
-
-
 
 // FILTERIMG
 
@@ -65,7 +57,7 @@ const filterImages = (e) => {
     cardimg.classList.add("hide");
 
     if (e.target.dataset.name === "all" || cardimg.getAttribute("data-name1") === e.target.dataset.name) {
-        cardimg.classList.remove("hide");
+    cardimg.classList.remove("hide");
     }
 });
 };
@@ -73,5 +65,3 @@ const filterImages = (e) => {
 filterImg.forEach((item) => {
     item.addEventListener("click", filterImages);
 });
-
-

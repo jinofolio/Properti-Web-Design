@@ -1,6 +1,6 @@
 body::-webkit-scrollbar {
     width: 10px;
-    background-color: rgb(49,48,54);
+    background-color: rgb(20, 20, 20);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, rgb(49,48,54) , rgb(49,48,54));
+    background-image: linear-gradient(to right, rgb(20, 20, 20) , rgb(20, 20, 20));
 }
 
 @import url('Poppins-Medium.otf');
@@ -60,7 +60,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
 }
 
 .houseimg {
@@ -95,12 +94,11 @@ body {
 }
 
 
-
-
 /* CARD MAPS */
 
 .maps {
     width: 100%;
+    margin-top: 3rem;
 }
 
 .maps .row .tittle-text {
@@ -158,7 +156,6 @@ body {
 }
 
 .card-desc {
-    text-transform: capitalize;
     line-height: 25px;
     margin: 40px 0;
     font-weight: 400px;
@@ -425,4 +422,148 @@ body {
     color: black;
 }
 
-/* IMG FILTER */
+.image-logo .desc-logo a:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+/*  END1 */
+
+.end1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    font-family: poplig;
+    background-color: white;
+    border-bottom: 3px solid rgb(176,100,87);
+}
+
+.end1left {
+    letter-spacing: 2px;
+    width: 27rem;
+    height: 20px;
+}
+
+.end1left p a {
+    text-decoration: none;
+    color: black;
+}
+
+.end1left p {
+    cursor: default;
+}
+
+.end1right {
+    letter-spacing: 3px;
+    margin-left: 10rem;
+    height: 20px;
+}
+
+.end1right a {
+    color: black;
+}
+
+.end1right a:hover {
+    color: black;
+}
+
+.end1right p {
+    cursor: default;
+}
+
+/* END2 */
+
+.end2 {
+    padding: 0 2rem;
+    background-color: white;
+    border-bottom: 3px solid rgb(176,100,87);
+}
+
+.coverend2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+    padding: 1rem 0;
+}
+
+.coverend2 h7 {
+    cursor: default;
+}
+
+.coverend2 p a {
+    text-decoration: none;
+    color: black;
+}
+
+.coverend2 p {
+    color: black;
+    cursor: default;
+}
+
+.end2right a {
+    text-decoration: none;
+    color: black;
+}
+
+/* END3 */
+
+.end3 {
+    background-color: white;
+}
+
+.coverend3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 35rem;
+    height: 60px;
+}
+
+.coverend3 p {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    height: 10px;
+    margin-left: 1rem;
+}
+
+.end3left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 15rem;
+}
+
+.end3left img {
+    height: 30px;
+    width: 39px;
+}
+
+.end3left p {
+    margin-right: 2rem;
+}
+
+
+/* CPR */
+
+.cpr {
+    border-top: 3px solid rgb(176,100,87);
+    padding: 0 2rem;
+}
+
+.cprsymbol {
+    width: 100%;
+}
+
+.cprsymbol p {
+    font-size: 10px;
+    font-family: poplig;
+    color: white;
+    height: 0px;
+}
